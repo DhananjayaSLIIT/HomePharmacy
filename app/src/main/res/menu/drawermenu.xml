@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/prescriptio" android:title="@string/add_prescription"
+        android:iconTint="@color/design_default_color_primary_variant"
+        android:icon="@drawable/prescription"/>
+    <item android:id="@+id/lab" android:title="@string/lab_reports" android:icon="@drawable/lab"/>
+    <item android:id="@+id/store" android:title="@string/visit_store" android:icon="@drawable/cart"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="@string/log_out" />
+
+</menu>

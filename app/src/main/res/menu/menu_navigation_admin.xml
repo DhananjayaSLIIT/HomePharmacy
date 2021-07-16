@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Apre_orders"
+        android:title="Prescriptions"
+        android:icon="@drawable/ic_addpres_24"/>
+
+    <item
+        android:id="@+id/Alab_report"
+        android:title="Lab Reports"
+        android:icon="@drawable/ic_description_24"/>
+
+    <item
+        android:id="@+id/Aadd_Items"
+        android:title="Add Items"
+        android:icon="@drawable/ic_add_item_24"/>
+    <item
+        android:id="@+id/Alog_out"
+        android:title="Customer Handling"
+        android:icon="@drawable/ic_user_24"/>
+
+</menu>

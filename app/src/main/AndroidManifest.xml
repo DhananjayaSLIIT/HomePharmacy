@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homepharmacy">
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".cVerifyPhone"></activity>
+        <activity android:name=".cCreateAccount" />
+        <activity android:name=".cAdmin_Products_View"
+            android:label="cAdmin_Products_View"/>
+        <activity android:name=".cProduct_Upload"
+            android:label="cProduct_Upload">
+
+        </activity>
+        <activity android:name=".cHome" />
+        <activity android:name=".cAdminHome" />
+        <activity android:name=".cLogin"/>
+        <activity android:name=".splash">
+
+        </activity>
+        <activity android:name=".Retrive"
+            android:label="Retrive">
+
+        </activity>
+        <activity android:name=".report"
+            android:label="report"/>
+        <activity android:name=".ImagesActivity"
+            android:label="ImagesActivity">
+
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="MainActivity"></activity>
+        <activity android:name=".cMainActivity" />
+        <activity android:name=".updateProduct"
+            android:label="updateProduct">
+
+        </activity>
+        <activity android:name=".ViewImage"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="ViewImage">
+        </activity>
+
+        <activity
+            android:name=".PresOrders"
+            android:label="Prescription Orders">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddPrescription"
+            android:label="Add prescription" >
+
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/createacc"
+    tools:context=".cCreateAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/AddPro"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/companyName"
+            android:textAlignment="center"
+            android:textColor="#102F84"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="WELCOME..."
+            android:textColor="#102F84"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/NewAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/regLink"
+            android:textColor="#102F84"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AddPro" />
+
+        <EditText
+            android:id="@+id/FirstN"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:background="@drawable/rounded_button4"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="#102F84"
+            android:textColorHint="@color/white"
+            android:textColorLink="#102F84"
+            android:hint="@string/fName"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/NewAccount" />
+
+        <EditText
+            android:id="@+id/phoneN"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/htphone"
+            android:background="@drawable/rounded_button4"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="#102F84"
+            android:textColorHint="@color/white"
+            android:textColorLink="#102F84"
+            android:inputType="phone"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintStart_toStartOf="@+id/FirstN"
+            app:layout_constraintTop_toBottomOf="@+id/FirstN"
+            tools:text="@string/htpass"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/htpass"
+            android:background="@drawable/rounded_button4"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="#102F84"
+            android:textColorHint="@color/white"
+            android:textColorLink="#102F84"
+            android:inputType="textPassword"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintStart_toStartOf="@+id/phoneN"
+            app:layout_constraintTop_toBottomOf="@+id/phoneN"
+            tools:text="@string/htpass" />
+
+        <TextView
+            android:id="@+id/phint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/passhint"
+            android:textColor="#102F84"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/signUp"
+            android:textColor="#FBF9F9"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/phint" />
+
+        <Button
+            android:id="@+id/cktbutton"
+            android:layout_width="396dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="#00000000"
+            android:text="@string/lodinMsg"
+            android:textColor="#102F84"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

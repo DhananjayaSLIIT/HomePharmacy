@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Cadd_pres"
+        android:title="Add prescription"
+        android:icon="@drawable/ic_addpres_24"/>
+
+    <item
+        android:id="@+id/Clab_report"
+        android:title="Lab Reports"
+        android:icon="@drawable/ic_description_24"/>
+
+    <item
+        android:id="@+id/Cadd_groc"
+        android:title="Visit Store"
+        android:icon="@drawable/ic_add_groce_24"/>
+    <item
+        android:id="@+id/Clog_out"
+        android:title="Visit Store"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+</menu>
